@@ -1,1 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- add script link icon -->
+    <script src="https://kit.fontawesome.com/eb339bb978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- create a upper container -->
+        <div class="upper-container">
+            <p>Math Partner</p>
+            <input type="button" id="historyBtn" value="History" onclick="historyButton()">  
+            <!-- create a Dom event on click historyBtn -->
+            <input type="button" id="savedBtn" value="SAVED SOLUTIONS" onclick="SavedButton()">  
+            <!-- create a Dom event on click savedBtn -->
+        </div>
+        <!-- create a empty div so some data here -->
+        <div class="historycon">
 
+        </div>
+        <!-- create a second section -->
+        <div class="subcontainer">
+            <div class="middle-container">
+                <div class="box1">
+                    <label for="problemBar"><h2>Problem</h2></label>
+                    <input type="text" id="problemBar" placeholder="TYPE HERE.......">
+                </div>
+
+                <div class="box2">
+                    <label for="categoryBar"><h2>Select Category</h2></label>
+                    <!-- create a select option menu -->
+                    <select id="categoryBar" name="categoryBar">
+                        <option value="simplify">Simplify</option>
+                        <option value="factor">Factor</option>
+                        <option value="derive">derive</option>
+                        <option value="integrate">integrate</option>
+                        <option value="zeroes">zeroes</option>
+                        <option value="tangent">Find</option>
+                        <option value="area">area under curve</option>
+                        <option value="cos">cosine</option>
+                        <option value="tan">Tangent</option>
+                        <option value="across">Inverse cosine</option>
+                        <option value="arosin">Inverse Sine</option>
+                        <option value="arctan">Inverse Tangent</option>
+                        <option value="abs">Absolute Value</option>
+                        <option value="log">Logarithm</option>
+                    </select>
+                </div>
+                <div class="box3">
+                    <!-- create a icon -->
+                    <!-- create in description link icon -->
+                    <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass fa-3x"></i></button> 
+                    <!-- create a event searchBtn -->
+                </div>
+
+            </div>
+            <!-- create a container input box -->
+            <div class="container-input">
+                <div class="input-Box1">
+
+                </div>
+                <div class="inputBox2">
+                    <!-- create a delete button -->
+                    <!-- create a event deleteBtn -->
+                    <button type="reset" id="deleteBtn" oncanplay="delBtn()"><i class="fa-solid fa-trash-can fa-3x"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- let start styling -->
+    <script src="app.js"></script>
+    
+</body>
+</html>
